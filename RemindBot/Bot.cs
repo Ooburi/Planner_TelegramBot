@@ -21,11 +21,12 @@ namespace RemindBot
 
             commandsList = new List<Command>
             {
-                new Authorize()
+                new Start()
             };
 
             client = new TelegramBotClient(Key);
             var cts = new CancellationTokenSource();
+            
             await client.ReceiveAsync(new DefaultUpdateHandler(updateHandler: HandleUpdateAsync, pollingErrorHandler: UpdateHandler.HandleErrorAsync), cancellationToken: cts.Token);
 
             return client;

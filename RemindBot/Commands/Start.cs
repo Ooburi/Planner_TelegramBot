@@ -4,7 +4,7 @@ using Telegram.Bot.Types;
 
 namespace RemindBot.Commands
 {
-    internal class Authorize : Command
+    internal class Start : Command
     {
         public override string Name => "/start";
 
