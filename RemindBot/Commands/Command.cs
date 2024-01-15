@@ -11,7 +11,5 @@ namespace RemindBot.Commands
         {
             return command.Contains(this.Name);
         }
-
-
     }
 }
